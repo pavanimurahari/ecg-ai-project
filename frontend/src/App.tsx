@@ -34,7 +34,7 @@ function App() {
 
     try {
       // Replace with your Render URL after deployment
-      const res = await axios.post('http://localhost:8000/analyze', formData);
+      const res = await axios.post('https://ecg-ai-project.onrender.com/analyze',formData);
       setResult(res.data);
     } catch (err) {
       console.error("Analysis failed", err);
